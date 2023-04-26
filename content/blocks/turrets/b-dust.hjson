@@ -17,9 +17,10 @@ shoot: {
 shootEffect: {
   type: ParticleEffect
   line: true
-  particles: 7
+  particles: 3
   lifetime: 15
-  length: 7
+  length: 15
+  cone: 35
   strokeFrom: 1
   strokeTo: 0
   lenFrom: 4
@@ -27,6 +28,7 @@ shootEffect: {
   colorFrom: ffffff
   colorTo: 80a9ff
 }
+smokeEffect: none
 rotateSpeed: 7.5
 shootSound: lasershoot
 consumes: {
