@@ -1,4 +1,8 @@
 type: PowerTurret
+name: "Dust"
+description: '''
+  Launches 5 weak plasma balls in quick succession.
+'''
 researchCostMultiplier: 0.1
 size: 1
 health: 240
@@ -34,14 +38,14 @@ shootType: {
   speed: 5
   lifetime: 16,
   sprite: circle-bullet
-  width: 6
-  height: 6
+  width: 3
+  height: 3
   shrinkY: 0
   frontColor: ffffff,
   backColor: 80a9ff,
   lightColor: 80a9ff,
   trailColor: 80a9ff,
-  trailWidth: 3,
+  trailWidth: 1.5,
   trailLength: 9,
   trailEffect: none,
   hitEffect: {
