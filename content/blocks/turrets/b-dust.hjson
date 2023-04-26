@@ -9,8 +9,21 @@ shoot: {
   shots: 5,
   shotDelay: 3,
 }
+shootEffect: {
+  type: ParticleEffect
+  line: true
+  particles: 7
+  lifetime: 15
+  length: 3
+  strokeFrom: 1
+  strokeTo: 0
+  lenFrom: 4
+  lenTo: 0
+  colorFrom: ffffff
+  colorTo: 80a9ff
+}
 rotateSpeed: 5
-shootSound: shootLaser
+shootSound: shootlaser
 consumes: {
   power: 1
 }
@@ -59,6 +72,7 @@ shootType: {
       }
     ]
   }
+  despawnHit: true
 }
 requirements: [
   lead/60
