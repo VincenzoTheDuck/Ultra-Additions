@@ -3,7 +3,7 @@ researchCostMultiplier: 0.1
 size: 1
 health: 240
 reload: 30
-inaccuracy: 6.5
+inaccuracy: 7
 shoot: {
   type: ShootPattern,
   shots: 5,
@@ -14,7 +14,7 @@ shootEffect: {
   line: true
   particles: 7
   lifetime: 15
-  length: 3
+  length: 7
   strokeFrom: 1
   strokeTo: 0
   lenFrom: 4
@@ -23,7 +23,7 @@ shootEffect: {
   colorTo: 80a9ff
 }
 rotateSpeed: 5
-shootSound: shootlaser
+shootSound: lasershoot
 consumes: {
   power: 1
 }
@@ -51,7 +51,7 @@ shootType: {
         type: WaveEffect
         lifetime: 10
         sizeFrom: 0
-        sizeTo: 4
+        sizeTo: 6
         strokeFrom: 1
         strokeTo: 0
         colorFrom: 80a9ff
@@ -62,7 +62,7 @@ shootType: {
         line: true
         particles: 7
         lifetime: 15
-        length: 3
+        length: 7
         strokeFrom: 1
         strokeTo: 0
         lenFrom: 4
@@ -72,6 +72,7 @@ shootType: {
       }
     ]
   }
+  despawnEffect: none
   despawnHit: true
 }
 requirements: [
