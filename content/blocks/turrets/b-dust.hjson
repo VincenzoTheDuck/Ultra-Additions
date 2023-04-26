@@ -7,12 +7,12 @@ researchCostMultiplier: 0.1
 size: 1
 health: 240
 reload: 30
-inaccuracy: 7
+inaccuracy: 4
 range: 80
 shoot: {
-  type: ShootPattern,
-  shots: 5,
-  shotDelay: 3,
+  type: ShootPattern
+  shots: 5
+  shotDelay: 3
 }
 shootEffect: {
   type: ParticleEffect
@@ -27,27 +27,28 @@ shootEffect: {
   colorFrom: ffffff
   colorTo: 80a9ff
 }
-rotateSpeed: 5
+rotateSpeed: 7.5
 shootSound: lasershoot
 consumes: {
   power: 1
 }
 hasPower: true
 shootType: {
-  type: BasicBulletType,
+  type: BasicBulletType
   speed: 5
-  lifetime: 16,
+  lifetime: 16
+  damage: 10
   sprite: circle-bullet
   width: 3
   height: 3
   shrinkY: 0
-  frontColor: ffffff,
-  backColor: 80a9ff,
-  lightColor: 80a9ff,
-  trailColor: 80a9ff,
-  trailWidth: 1.5,
-  trailLength: 9,
-  trailEffect: none,
+  frontColor: ffffff
+  backColor: 80a9ff
+  lightColor: 80a9ff
+  trailColor: 80a9ff
+  trailWidth: 1.5
+  trailLength: 9
+  trailEffect: none
   hitEffect: {
     type: MultiEffect
     lifetime: 70
