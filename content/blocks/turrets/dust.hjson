@@ -1,0 +1,67 @@
+type: PowerTurret
+researchCostMultiplier: 0.1
+size: 1
+health: 240
+reload: 30
+inaccuracy: 6.5
+shoot: {
+  type: ShootPattern,
+  shots: 5,
+  shotDelay: 3,
+}
+rotateSpeed: 5
+shootSound: shootLaser
+consumes: {
+  power: 1
+}
+hasPower: true
+shootType: {
+  type: BasicBulletType,
+  speed: 5
+  lifetime: 20,
+  sprite: circle-bullet
+  width: 6
+  height: 6
+  shrinkY: 0
+  frontColor: ffffff,
+  backColor: 80a9ff,
+  lightColor: 80a9ff,
+  trailColor: 80a9ff,
+  trailWidth: 3,
+  trailLength: 9,
+  trailEffect: none,
+  hitEffect: {
+    type: MultiEffect
+    lifetime: 70
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 10
+        sizeFrom: 0
+        sizeTo: 4
+        strokeFrom: 1
+        strokeTo: 0
+        colorFrom: 80a9ff
+        colorTo: 80a9ff
+      }
+      {
+        type: ParticleEffect
+        line: true
+        particles: 7
+        lifetime: 15
+        length: 3
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: ffffff
+        colorTo: 80a9ff
+      }
+    ]
+  }
+}
+requirements: [
+  lead/60
+  titanium/80
+]
+category: turret
