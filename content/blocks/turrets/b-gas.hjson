@@ -6,12 +6,12 @@ description: '''
 researchCostMultiplier: 0.1
 size: 2
 health: 240
-reload: 30
+reload: 20
 range: 200
 shoot: {
   type: ShootAltenate
   barrels: 2
-  spread: 1.2
+  spread: 4
 }
 shootEffect: {
   type: ParticleEffect
@@ -28,6 +28,7 @@ shootEffect: {
   colorTo: 80a9ff
 }
 smokeEffect: none
+heatColor: 80a9ff
 rotateSpeed: 5.5
 shootSound: lasershoot
 consumes: {
@@ -38,7 +39,7 @@ shootType: {
   type: BasicBulletType
   speed: 5
   lifetime: 40
-  damage: 10
+  damage: 35
   sprite: circle-bullet
   width: 2
   height: 2
