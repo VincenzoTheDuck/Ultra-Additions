@@ -22,7 +22,7 @@ shootEffect: {
   colorFrom: ffffff
   colorTo: ffdd55
 }
-smokeEffect: smoke
+smokeEffect: shootLargeSmoke
 rotateSpeed: 7.5
 shootSound: flame
 ammoTypes: {
@@ -42,7 +42,7 @@ ammoTypes: {
     trailColor: ffdd55
     trailWidth: 2
     trailLength: 9
-    trailEffect: rocketSmokeLarge
+    trailEffect: shootLargeSmoke
     trailInterval: 0.3
     hitEffect: {
       type: MultiEffect
@@ -71,7 +71,7 @@ ammoTypes: {
           colorFrom: ffffff
           colorTo: ffdd55
         }
-        rocketSmokeLarge
+        shootLargeSmoke
       ]
     }
     despawnEffect: none
