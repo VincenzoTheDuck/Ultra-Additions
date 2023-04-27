@@ -71,7 +71,16 @@ ammoTypes: {
           colorFrom: ffffff
           colorTo: ffdd55
         }
-        largeSmoke
+        {
+          type: ParticleEffect
+          particles: 9
+          lifetime: 30
+          length: 15
+          sizeFrom: 2
+          sizeTo: 0
+          colorFrom: ffffff
+          colorTo: ffdd55
+        }
       ]
     }
     despawnEffect: none
