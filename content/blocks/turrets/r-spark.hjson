@@ -42,8 +42,8 @@ ammoTypes: {
     trailColor: ffdd55
     trailWidth: 2
     trailLength: 9
-    trailEffect: shootBigSmoke
-    trailInterval: 0.3
+    trailEffect: missileTrailSmoke
+    trailInterval: 1
     hitEffect: {
       type: MultiEffect
       lifetime: 70
@@ -71,7 +71,7 @@ ammoTypes: {
           colorFrom: ffffff
           colorTo: ffdd55
         }
-        shootBigSmoke
+        largeSmoke
       ]
     }
     despawnEffect: none
