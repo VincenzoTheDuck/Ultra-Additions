@@ -30,55 +30,57 @@ consumes: {
 }
 hasPower: true
 ammoTypes: {
-  type: BasicBulletType
-  speed: 5
-  lifetime: 22
-  damage: 20
-  status: burning
-  sprite: circle-bullet
-  width: 4
-  height: 4
-  shrinkY: 0
-  frontColor: ffffff
-  backColor: ffdd55
-  lightColor: ffdd55
-  trailColor: ffdd55
-  trailWidth: 2
-  trailLength: 9
-  trailEffect: largeSmoke
-  trailInterval: 1
-  hitEffect: {
-    type: MultiEffect
-    lifetime: 70
-    effects: [
-      {
-        type: WaveEffect
-        lifetime: 10
-        sizeFrom: 0
-        sizeTo: 6
-        strokeFrom: 1
-        strokeTo: 0
-        colorFrom: ffdd55
-        colorTo: ffdd55
-      }
-      {
-        type: ParticleEffect
-        line: true
-        particles: 7
-        lifetime: 15
-        length: 7
-        strokeFrom: 1
-        strokeTo: 0
-        lenFrom: 4
-        lenTo: 0
-        colorFrom: ffffff
-        colorTo: ffdd55
-      }
-      largeSmoke
-    ]
+  coal: {
+    type: BasicBulletType
+    speed: 5
+    lifetime: 22
+    damage: 20
+    status: burning
+    sprite: circle-bullet
+    width: 4
+    height: 4
+    shrinkY: 0
+    frontColor: ffffff
+    backColor: ffdd55
+    lightColor: ffdd55
+    trailColor: ffdd55
+    trailWidth: 2
+    trailLength: 9
+    trailEffect: largeSmoke
+    trailInterval: 1
+    hitEffect: {
+      type: MultiEffect
+      lifetime: 70
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 10
+          sizeFrom: 0
+          sizeTo: 6
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: ffdd55
+          colorTo: ffdd55
+        }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 7
+          lifetime: 15
+          length: 7
+          strokeFrom: 1
+          strokeTo: 0
+          lenFrom: 4
+          lenTo: 0
+          colorFrom: ffffff
+          colorTo: ffdd55
+        }
+        largeSmoke
+      ]
+    }
+    despawnEffect: none
+    despawnHit: true
   }
-  despawnEffect: none
-  despawnHit: true
 }
 requirements: [
   copper/60
