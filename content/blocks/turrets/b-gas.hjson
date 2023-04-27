@@ -9,7 +9,7 @@ health: 240
 reload: 20
 range: 200
 shoot: {
-  type: ShootAltenate
+  type: ShootAlternate
   barrels: 2
   spread: 4
 }
