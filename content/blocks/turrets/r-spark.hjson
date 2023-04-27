@@ -6,7 +6,7 @@ description: '''
 researchCostMultiplier: 0.1
 size: 1
 health: 240
-reload: 40
+reload: 25
 range: 110
 shootEffect: {
   type: ParticleEffect
@@ -25,10 +25,6 @@ shootEffect: {
 smokeEffect: smoke
 rotateSpeed: 7.5
 shootSound: flame
-consumes: {
-  power: 1
-}
-hasPower: true
 ammoTypes: {
   coal: {
     type: BasicBulletType
@@ -46,8 +42,8 @@ ammoTypes: {
     trailColor: ffdd55
     trailWidth: 2
     trailLength: 9
-    trailEffect: rocketSmoke
-    trailInterval: 1
+    trailEffect: rocketSmokeLarge
+    trailInterval: 0.3
     hitEffect: {
       type: MultiEffect
       lifetime: 70
