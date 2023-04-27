@@ -42,8 +42,17 @@ ammoTypes: {
     trailColor: ffdd55
     trailWidth: 2
     trailLength: 9
-    trailEffect: missileTrailSmoke
-    trailInterval: 1
+    trailEffect: {
+      type: ParticleEffect
+      particles: 12
+      lifetime: 30
+      length: 30
+      sizeFrom: 4
+      sizeTo: 0
+      colorFrom: ffffff
+      colorTo: 515151
+    }
+    trailInterval: 2
     hitEffect: {
       type: MultiEffect
       lifetime: 70
@@ -79,7 +88,7 @@ ammoTypes: {
           sizeFrom: 4
           sizeTo: 0
           colorFrom: ffffff
-          colorTo: ffdd55
+          colorTo: 515151
         }
       ]
     }
