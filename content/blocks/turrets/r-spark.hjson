@@ -44,14 +44,16 @@ ammoTypes: {
     trailLength: 9
     trailEffect: {
       type: ParticleEffect
-      particles: 12
+      particles: 6
       lifetime: 30
-      length: 30
-      sizeFrom: 4
+      length: -30
+      cone: 25
+      sizeFrom: 3.5
       sizeTo: 0
       colorFrom: ffffff
       colorTo: 515151
     }
+    trailRotation: true
     trailInterval: 2
     hitEffect: {
       type: MultiEffect
