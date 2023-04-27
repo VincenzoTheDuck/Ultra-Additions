@@ -42,19 +42,7 @@ ammoTypes: {
     trailColor: ffdd55
     trailWidth: 2
     trailLength: 9
-    trailEffect: {
-      type: ParticleEffect
-      particles: 6
-      lifetime: 10
-      length: -30
-      cone: 25
-      sizeFrom: 3.5
-      sizeTo: 0
-      colorFrom: ffffff
-      colorTo: 515151
-    }
-    trailRotation: true
-    trailInterval: 1
+    trailEffect: none
     hitEffect: {
       type: MultiEffect
       lifetime: 70
