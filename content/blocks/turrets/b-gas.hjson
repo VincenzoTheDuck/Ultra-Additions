@@ -13,6 +13,7 @@ shoot: {
   barrels: 2
   spread: 4
 }
+shootY: 4.5
 shootEffect: {
   type: ParticleEffect
   line: true
