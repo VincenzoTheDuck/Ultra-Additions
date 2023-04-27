@@ -45,7 +45,7 @@ ammoTypes: {
     trailEffect: {
       type: ParticleEffect
       particles: 6
-      lifetime: 30
+      lifetime: 10
       length: -30
       cone: 25
       sizeFrom: 3.5
@@ -54,7 +54,7 @@ ammoTypes: {
       colorTo: 515151
     }
     trailRotation: true
-    trailInterval: 2
+    trailInterval: 1
     hitEffect: {
       type: MultiEffect
       lifetime: 70
