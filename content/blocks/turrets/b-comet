@@ -1,0 +1,94 @@
+type: ItemTurret
+name: "Comet"
+description: '''
+  Launches large, homing chunks of material.
+'''
+researchCostMultiplier: 0.1
+size: 3
+health: 600
+reload: 25
+range: 110
+shootEffect: {
+  type: ParticleEffect
+  line: true
+  particles: 15
+  lifetime: 15
+  length: 40
+  cone: 50
+  strokeFrom: 1
+  strokeTo: 0
+  lenFrom: 4
+  lenTo: 0
+  colorFrom: ffffff
+  colorTo: 80a9ff
+}
+smokeEffect: shootBigSmoke
+rotateSpeed: 4
+shootSound: shootLarge
+ammoTypes: {
+  titanium: {
+    type: BasicBulletType
+    speed: 5
+    lifetime: 22
+    damage: 90
+    sprite: circle-bullet
+    width: 10
+    height: 10
+    shrinkY: 0
+    frontColor: ffffff
+    backColor: 80a9ff
+    lightColor: 80a9ff
+    trailColor: 80a9ff
+    trailWidth: 5
+    trailLength: 15
+    trailEffect: none
+    hitEffect: {
+      type: MultiEffect
+      lifetime: 70
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 10
+          sizeFrom: 0
+          sizeTo: 20
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: 80a9ff
+          colorTo: 80a9ff
+        }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 10
+          lifetime: 15
+          length: 22
+          strokeFrom: 1
+          strokeTo: 0
+          lenFrom: 4
+          lenTo: 0
+          colorFrom: ffffff
+          colorTo: 80a9ff
+        }
+        {
+          type: ParticleEffect
+          particles: 12
+          lifetime: 30
+          length: 15
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: ffffff
+          colorTo: 515151
+        }
+      ]
+    }
+    despawnEffect: none
+    despawnHit: true
+  }
+}
+requirements: [
+  copper/100
+  lead/160
+  graphite/200
+  silicon/130
+]
+category: turret
