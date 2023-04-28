@@ -33,8 +33,8 @@ ammoTypes: {
     damage: 0
     splashDamage: 180
     splashDamageRadius: 56
-    homingPower: 0.5
-    homingRange: 30
+    homingPower: 0.3
+    homingRange: 65
     sprite: circle-bullet
     width: 10
     height: 10
