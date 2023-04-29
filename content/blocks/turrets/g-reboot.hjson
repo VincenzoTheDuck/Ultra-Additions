@@ -48,7 +48,7 @@ shootType: {
   frontColor: ffffff
   backColor: 84f491
   lightColor: 84f491
-  hitEffect: laserHit
+  hitEffect: hitLaser
   despawnEffect: none
   despawnHit: true
 }
