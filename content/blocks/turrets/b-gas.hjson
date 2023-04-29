@@ -8,6 +8,7 @@ size: 2
 health: 240
 reload: 20
 range: 200
+recoils: 2
 drawer: {
   type: DrawTurret
   parts: [
