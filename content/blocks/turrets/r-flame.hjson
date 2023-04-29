@@ -18,7 +18,7 @@ drawer: {
       suffix: "-glow"
       blending: additive
       outline: false
-      colorFrom: f1545400
+      color: f1545400
       colorTo: f15454
     }
   ]
