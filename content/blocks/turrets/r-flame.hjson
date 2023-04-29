@@ -9,6 +9,7 @@ health: 500
 reload: 25
 range: 110
 shootY: 0.8
+minWarmup: 0.85
 drawer: {
   type: DrawTurret
   parts: [
