@@ -8,6 +8,31 @@ size: 2
 health: 240
 reload: 20
 range: 200
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      progress: recoil
+      suffix: "-heat-l"
+      blending: additive
+      outline: false
+      color: 80a9ff
+      colorTo: 80a9ff00
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      progress: recoil
+      suffix: "-heat-r"
+      blending: additive
+      outline: false
+      color: 80a9ff
+      colorTo: 80a9ff00
+      recoilIndex: 1
+    }
+  ]
+}
 shoot: {
   type: ShootAlternate
   barrels: 2
@@ -29,7 +54,6 @@ shootEffect: {
   colorTo: 80a9ff
 }
 smokeEffect: none
-heatColor: 80a9ff
 rotateSpeed: 5.5
 shootSound: lasershoot
 consumes: {
