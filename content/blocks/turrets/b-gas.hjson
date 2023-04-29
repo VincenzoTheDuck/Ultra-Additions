@@ -20,7 +20,7 @@ drawer: {
       outline: false
       color: 80a9ff00
       colorTo: 80a9ff
-      recoilIndex: 1
+      recoilIndex: 0
     }
     {
       type: RegionPart
@@ -30,7 +30,7 @@ drawer: {
       outline: false
       color: 80a9ff00
       colorTo: 80a9ff
-      recoilIndex: 2
+      recoilIndex: 1
     }
   ]
 }
