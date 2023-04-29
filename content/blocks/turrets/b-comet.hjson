@@ -6,7 +6,7 @@ description: '''
 researchCostMultiplier: 0.1
 size: 3
 health: 600
-reload: 25
+reload: 50
 range: 360
 shootEffect: {
   type: ParticleEffect
@@ -22,6 +22,7 @@ shootEffect: {
   colorFrom: ffffff
   colorTo: 80a9ff
 }
+recoil: 3
 smokeEffect: shootBigSmoke
 rotateSpeed: 4
 shootSound: shootBig
