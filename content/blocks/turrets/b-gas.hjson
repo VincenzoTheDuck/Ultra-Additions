@@ -17,9 +17,9 @@ drawer: {
       suffix: "-heat-l"
       blending: additive
       outline: false
-      color: 80a9ff
-      colorTo: 80a9ff00
-      recoilIndex: 0
+      color: 80a9ff00
+      colorTo: 80a9ff
+      recoilIndex: 1
     }
     {
       type: RegionPart
@@ -27,9 +27,9 @@ drawer: {
       suffix: "-heat-r"
       blending: additive
       outline: false
-      color: 80a9ff
-      colorTo: 80a9ff00
-      recoilIndex: 1
+      color: 80a9ff00
+      colorTo: 80a9ff
+      recoilIndex: 2
     }
   ]
 }
