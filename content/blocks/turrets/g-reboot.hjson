@@ -1,18 +1,18 @@
 type: PowerTurret
 name: "Reboot"
 description: '''
-  Launches repairing laser bolts.
+  Rapidly launches repairing laser bolts.
 '''
 researchCostMultiplier: 0.1
-size: 2
+size: 1
 health: 260
-reload: 15
+reload: 7
 range: 200
 targetHealing: true
 shoot: {
   type: ShootAlternate
   barrels: 3
-  spread: 1.2
+  spread: 1.6
 }
 shootEffect: {
   type: ParticleEffect
