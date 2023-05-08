@@ -6,7 +6,7 @@ description: '''
 researchCostMultiplier: 0.1
 size: 1
 health: 290
-reload: 25
+reload: 40
 range: 110
 shootEffect: {
   type: ParticleEffect
@@ -30,7 +30,7 @@ ammoTypes: {
     type: BasicBulletType
     speed: 5
     lifetime: 22
-    damage: 20
+    damage: 40
     status: burning
     sprite: circle-bullet
     width: 4
@@ -91,6 +91,6 @@ requirements: [
   lead/80
   graphite/95
   titanium/100
-  plastium/65
+  plastanium/65
 ]
 category: turret
