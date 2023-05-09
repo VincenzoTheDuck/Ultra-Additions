@@ -1,0 +1,103 @@
+type: PowerTurret
+name: "Matter"
+description: '''
+  Launches an orb of destructive energy at nearby enemies.
+'''
+researchCostMultiplier: 0.1
+size: 1
+health: 300
+reload: 90
+range: 112
+shoot: {
+  type: ShootPattern
+  shots: 5
+  shotDelay: 3
+}
+shootEffect: {
+  type: ParticleEffect
+  line: true
+  particles: 7
+  lifetime: 15
+  length: 25
+  cone: 55
+  strokeFrom: 1
+  strokeTo: 0
+  lenFrom: 4
+  lenTo: 0
+  colorFrom: ffffff
+  colorTo: a387ea
+}
+smokeEffect: {
+  type: ParticleEffect
+  line: true
+  particles: 10
+  lifetime: 30
+  length: 20
+  cone: 30
+  sizeFrom: 5
+  sizeTo: 0
+  colorFrom: a387ea85
+  colorTo: a387ea65
+}
+rotateSpeed: 5
+shootSound: release
+consumes: {
+  power: 3.5
+}
+hasPower: true
+shootType: {
+  type: BasicBulletType
+  speed: 4
+  lifetime: 28
+  damage: 100
+  splashDamage: 60
+  splashDamageRadius: 20
+  sprite: circle-bullet
+  width: 7
+  height: 7
+  shrinkY: 0
+  frontColor: ffffff
+  backColor: a387ea
+  lightColor: a387ea
+  trailColor: a387ea
+  trailWidth: 3.5
+  trailLength: 15
+  trailEffect: none
+  hitEffect: {
+    type: MultiEffect
+    lifetime: 70
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 1
+        strokeTo: 0
+        colorFrom: a387ea
+        colorTo: a387ea
+      }
+      {
+        type: ParticleEffect
+        line: true
+        particles: 15
+        lifetime: 15
+        length: 30
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: ffffff
+        colorTo: a387ea
+      }
+    ]
+  }
+  despawnEffect: none
+  despawnHit: true
+}
+requirements: [
+  graphite/90
+  titanium/120
+  silicon/69
+]
+category: turret
