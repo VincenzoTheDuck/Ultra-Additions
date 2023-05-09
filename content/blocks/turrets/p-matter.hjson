@@ -84,20 +84,6 @@ shootType: {
         colorFrom: ffffff
         colorTo: a387ea
       }
-      {
-        type: ParticleEffect
-        line: true
-        particles: 15
-        lifetime: 15
-        lengthFrom: 30
-        length: -30
-        strokeFrom: 1
-        strokeTo: 0
-        lenFrom: 4
-        lenTo: 0
-        colorFrom: ffffff
-        colorTo: a387ea
-      }
     ]
   }
   despawnEffect: none
