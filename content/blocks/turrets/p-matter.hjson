@@ -24,15 +24,14 @@ shootEffect: {
 }
 smokeEffect: {
   type: ParticleEffect
-  line: true
   particles: 10
   lifetime: 30
   length: 20
   cone: 30
   sizeFrom: 5
   sizeTo: 0
-  colorFrom: a387ea85
-  colorTo: a387ea65
+  colorFrom: a387ea
+  colorTo: a387ea
 }
 rotateSpeed: 5
 shootSound: release
@@ -90,8 +89,8 @@ shootType: {
         line: true
         particles: 15
         lifetime: 15
-        lengthFrom: -30
-        length: 30
+        lengthFrom: 30
+        length: -30
         strokeFrom: 1
         strokeTo: 0
         lenFrom: 4
