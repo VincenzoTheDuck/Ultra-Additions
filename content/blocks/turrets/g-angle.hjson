@@ -7,8 +7,14 @@ researchCostMultiplier: 0.1
 size: 1
 health: 290
 reload: 40
+inaccuracy: 4
 range: 110
 targetHealing: true
+shoot: {
+  type: ShootPattern
+  shots: 3
+  shotDelay: 0
+}
 shootEffect: {
   type: ParticleEffect
   line: true
@@ -34,7 +40,7 @@ ammoTypes: {
     damage: 40
     collidesTeam: true
     healPercent: 3
-    width: 2.5
+    width: 5
     height: 6
     shrinkY: 0
     frontColor: ffffff
@@ -50,9 +56,9 @@ ammoTypes: {
       effects: [
         {
           type: WaveEffect
-          lifetime: 10
+          lifetime: 25
           sizeFrom: 0
-          sizeTo: 6
+          sizeTo: 16
           strokeFrom: 1
           strokeTo: 0
           colorFrom: 84f491
@@ -61,8 +67,8 @@ ammoTypes: {
         {
           type: ParticleEffect
           line: true
-          particles: 7
-          lifetime: 15
+          particles: 10
+          lifetime: 20
           length: 7
           strokeFrom: 1
           strokeTo: 0
