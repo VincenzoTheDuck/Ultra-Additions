@@ -1,0 +1,100 @@
+type: ItemTurret
+name: "Ignition"
+description: '''
+  Fires a large, explosive flame orb.
+'''
+researchCostMultiplier: 0.2
+size: 3
+health: 980
+reload: 120
+cooldown: 95
+range: 304
+shootY: 0.8
+shootEffect: {
+  type: ParticleEffect
+  line: true
+  particles: 10
+  lifetime: 15
+  length: 20
+  cone: 45
+  strokeFrom: 1.5
+  strokeTo: 0
+  lenFrom: 5
+  lenTo: 0
+  colorFrom: ffffff
+  colorTo: ffdd55
+}
+smokeEffect: shootBigSmoke
+rotateSpeed: 6
+shootSound: flame
+ammoTypes: {
+  pyratite: {
+    type: BasicBulletType
+    speed: 5
+    lifetime: 61
+    damage: 0
+    splashDamage: 185
+    splashDamageRadius: 104
+    status: burning
+    sprite: circle-bullet
+    width: 7
+    height: 7
+    shrinkY: 0
+    frontColor: ffffff
+    backColor: ffdd55
+    lightColor: ffdd55
+    trailColor: ffdd55
+    trailWidth: 4.5
+    trailLength: 18
+    trailEffect: none
+    hitEffect: {
+      type: MultiEffect
+      lifetime: 70
+      effects: [
+        {
+          type: WaveEffect
+          lifetime: 25
+          sizeFrom: 0
+          sizeTo: 104
+          strokeFrom: 1
+          strokeTo: 0
+          colorFrom: ffdd55
+          colorTo: ffdd55
+        }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 9
+          lifetime: 25
+          length: 115
+          strokeFrom: 2
+          strokeTo: 0
+          lenFrom: 7
+          lenTo: 0
+          colorFrom: ffffff
+          colorTo: ffdd55
+        }
+        {
+          type: ParticleEffect
+          particles: 15
+          lifetime: 45
+          length: 65
+          sizeFrom: 4
+          sizeTo: 0
+          colorFrom: 515151
+          colorTo: 515151
+        }
+      ]
+    }
+    despawnEffect: none
+    despawnHit: true
+  }
+}
+ammoPerShot: 2
+requirements: [
+  copper/180
+  titanium/250
+  graphite/400
+  silicon/150
+]
+category: turret
