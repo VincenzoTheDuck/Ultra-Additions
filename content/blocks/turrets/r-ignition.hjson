@@ -76,8 +76,8 @@ ammoTypes: {
         }
         {
           type: ParticleEffect
-          particles: 25
-          lifetime: 45
+          particles: 45
+          lifetime: 50
           length: 95
           sizeFrom: 4
           sizeTo: 0
