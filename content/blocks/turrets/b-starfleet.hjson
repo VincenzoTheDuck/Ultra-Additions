@@ -1,0 +1,128 @@
+type: PowerTurret
+name: "Starfleet"
+description: '''
+  Fires bursts of large plasma balls.
+'''
+researchCostMultiplier: 0.2
+size: 4
+health: 2048
+reload: 55
+range: 300
+recoils: 2
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      progress: recoil
+      suffix: "-heat-l"
+      blending: additive
+      outline: false
+      color: 80a9ff00
+      colorTo: 80a9ff
+      recoilIndex: 0
+    }
+    {
+      type: RegionPart
+      progress: recoil
+      suffix: "-heat-r"
+      blending: additive
+      outline: false
+      color: 80a9ff00
+      colorTo: 80a9ff
+      recoilIndex: 1
+    }
+  ]
+}
+shoot: {
+  type: ShootMulti
+  shoots: [
+    {
+      type: ShootPattern
+      shots: 6
+      shotDelay: 3
+    }
+    {
+      type: ShootAlternate
+      barrels: 2
+      spread: 6
+    }
+  ]
+}
+shootEffect: {
+  type: ParticleEffect
+  line: true
+  particles: 10
+  lifetime: 15
+  length: 20
+  cone: 20
+  strokeFrom: 1
+  strokeTo: 0
+  lenFrom: 4
+  lenTo: 0
+  colorFrom: ffffff
+  colorTo: 80a9ff
+}
+smokeEffect: none
+rotateSpeed: 5.5
+shootSound: shootBig
+consumes: {
+  power: 10
+}
+hasPower: true
+shootType: {
+  type: BasicBulletType
+  speed: 8
+  lifetime: 37.5
+  damage: 100
+  sprite: circle-bullet
+  width: 9
+  height: 9
+  shrinkY: 0
+  frontColor: ffffff
+  backColor: 80a9ff
+  lightColor: 80a9ff
+  trailColor: 80a9ff
+  trailWidth: 4.5
+  trailLength: 20
+  trailEffect: none
+  hitEffect: {
+    type: MultiEffect
+    lifetime: 70
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 0
+        sizeTo: 20
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 80a9ff
+        colorTo: 80a9ff
+      }
+      {
+        type: ParticleEffect
+        line: true
+        particles: 20
+        lifetime: 15
+        length: 13
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: ffffff
+        colorTo: 80a9ff
+      }
+    ]
+  }
+  despawnEffect: none
+  despawnHit: true
+}
+requirements: [
+  lead/300
+  titanium/640
+  graphite/200
+  thorium/350
+  silicon/145
+]
+category: turret
