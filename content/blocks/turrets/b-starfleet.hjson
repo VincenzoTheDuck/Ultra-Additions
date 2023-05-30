@@ -6,7 +6,7 @@ description: '''
 researchCostMultiplier: 0.2
 size: 4
 health: 2048
-reload: 55
+reload: 15
 cooldownTime: 65
 range: 300
 recoil: 6.5
@@ -36,19 +36,9 @@ drawer: {
   ]
 }
 shoot: {
-  type: ShootMulti
-  source: {
-    type: ShootAlternate
-    barrels: 2
-    spread: 4.5
-  }
-  dest: [
-    {
-      type: ShootPattern
-      shots: 6
-      shotDelay: 3
-    }
-  ]
+  type: ShootAlternate
+  barrels: 2
+  spread: 6
 }
 shootEffect: {
   type: ParticleEffect
