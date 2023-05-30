@@ -54,7 +54,7 @@ shootEffect: {
   colorTo: 80a9ff
 }
 smokeEffect: none
-rotateSpeed: 5.5
+rotateSpeed: 3.5
 shootSound: shootBig
 consumes: {
   power: 10
