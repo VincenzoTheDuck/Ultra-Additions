@@ -7,8 +7,9 @@ researchCostMultiplier: 0.2
 size: 4
 health: 2048
 reload: 55
+cooldown: 65
 range: 300
-recoils: 2
+recoil: 3.5
 drawer: {
   type: DrawTurret
   parts: [
@@ -36,16 +37,16 @@ drawer: {
 }
 shoot: {
   type: ShootMulti
-  shoots: [
-    {
-      type: ShootPattern
-      shots: 6
-      shotDelay: 3
-    }
+  source: {
+    type: ShootPattern
+    shots: 6
+    shotDelay: 3
+  }
+  dest: [
     {
       type: ShootAlternate
       barrels: 2
-      spread: 6
+      spread: 4.5
     }
   ]
 }
