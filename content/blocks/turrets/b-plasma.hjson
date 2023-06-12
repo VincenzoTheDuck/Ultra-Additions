@@ -1,0 +1,88 @@
+type: PowerTurret
+name: "Plasma"
+description: '''
+  Launches large plasma balls.
+'''
+researchCostMultiplier: 0.15
+size: 3
+health: 1000
+reload: 110
+inaccuracy: 0
+range: 160
+heatColor: 80a9ff
+shootEffect: {
+  type: ParticleEffect
+  line: true
+  particles: 10
+  lifetime: 15
+  length: 25
+  cone: 35
+  strokeFrom: 1
+  strokeTo: 0
+  lenFrom: 4
+  lenTo: 0
+  colorFrom: ffffff
+  colorTo: 80a9ff
+}
+smokeEffect: none
+rotateSpeed: 7.5
+shootSound: laser
+consumes: {
+  power: 7
+}
+hasPower: true
+shootType: {
+  type: BasicBulletType
+  speed: 8
+  lifetime: 20
+  damage: 85
+  sprite: circle-bullet
+  width: 3
+  height: 3
+  shrinkY: 0
+  frontColor: ffffff
+  backColor: 80a9ff
+  lightColor: 80a9ff
+  trailColor: 80a9ff
+  trailWidth: 1.5
+  trailLength: 9
+  trailEffect: none
+  hitEffect: {
+    type: MultiEffect
+    lifetime: 70
+    effects: [
+      {
+        type: WaveEffect
+        lifetime: 25
+        sizeFrom: 0
+        sizeTo: 12
+        strokeFrom: 1
+        strokeTo: 0
+        colorFrom: 80a9ff
+        colorTo: 80a9ff
+      }
+      {
+        type: ParticleEffect
+        line: true
+        particles: 7
+        lifetime: 25
+        length: 15
+        strokeFrom: 1
+        strokeTo: 0
+        lenFrom: 4
+        lenTo: 0
+        colorFrom: ffffff
+        colorTo: 80a9ff
+      }
+    ]
+  }
+  despawnEffect: none
+  despawnHit: true
+}
+requirements: [
+  lead/90
+  titanium/150
+  copper/100
+  graphite/20
+]
+category: turret
